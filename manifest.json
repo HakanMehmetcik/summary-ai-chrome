@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Local Context Share",
+    "version": "1.0",
+    "description": "Extract and summarize web pages using your own local LLM.",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "clipboardWrite",
+      "storage"
+    ],
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ],
+    "options_ui": {
+      "page": "options.html",
+      "open_in_tab": false
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }

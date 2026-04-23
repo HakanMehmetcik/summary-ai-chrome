@@ -1,0 +1,107 @@
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    width: 450px; 
+    min-height: 400px; 
+    margin: 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+#summaryContent {
+    background: white;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 13.5px;
+    line-height: 1.5;
+    max-height: 450px; 
+    overflow-y: auto;
+}
+
+#summaryContent p {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+#summaryContent strong {
+    color: #111;
+    font-weight: 600;
+}
+
+#summaryContent h2, 
+#summaryContent h3 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #0d1117;
+    border-bottom: none; 
+}
+
+#summaryContent li {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 6px;
+    padding-left: 4px;
+    display: list-item;
+}
+
+button {
+    background-color: #0d1117;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #2ea043;
+}
+
+button.success {
+    background-color: #2ea043;
+}
+
+#errorState {
+    color: #d73a49;
+    background: #ffeef0;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.spinner {
+    width: 24px;
+    height: 24px;
+    border: 3px solid #ddd;
+    border-top-color: #0d1117;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 10px auto;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+#loadingState p {
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+}
